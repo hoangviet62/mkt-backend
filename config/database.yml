@@ -19,12 +19,12 @@ default: &default
 
 development:
   <<: *default
-  database: seller_portal_development
+  database: <%= ENV['MYSQL_DATABASE'] %>
 
 test:
   <<: *default
-  database: seller_portal_test
+  database: <%= ENV['MYSQL_DATABASE'] %>
 
 production:
   <<: *default
-  database: seller_portal_production
+  database: <%= ENV['MYSQL_DATABASE'] %>
