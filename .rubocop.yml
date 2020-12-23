@@ -1,0 +1,14 @@
+AllCops:
+  NewCops: enable
+  SuggestExtensions: false
+  Include:
+    - Rakefile
+    - config.ru
+  Exclude:
+    - db/**
+    - config/**
+    - script/**
+    - bin/bundle
+
+Style/Documentation:
+  Enabled: false
