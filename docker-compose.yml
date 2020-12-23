@@ -1,0 +1,19 @@
+version: "2.2"
+
+services:
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: mkt-backend
+    command: bundle exec rails s -u puma
+    hostname: mkt-backend
+    container_name: mkt-backend
+    mem_limit: 128M
+    memswap_limit: 128M
+    logging:
+      driver: json-file
+      options:
+        max-size: 50m
+    ports:
+      - "3000:3000"
