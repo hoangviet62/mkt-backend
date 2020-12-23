@@ -10,7 +10,9 @@ gem 'rails', '~> 6.1.0'
 
 gem 'bootsnap', '>= 1.4.4', require: false
 gem 'devise'
+gem 'simple_token_authentication'
 gem 'rack-cors'
+gem 'jsonapi-serializer'
 
 group :development, :test do
   gem 'brakeman'

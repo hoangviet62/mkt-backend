@@ -29,6 +29,7 @@ namespace :db do
 
     logger.info 'Running migration'
     Rake::Task['db:migrate'].invoke
+    Rake::Task['db:seed'].invoke
     logger.info 'Migration finished'
   end
 end
