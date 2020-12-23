@@ -6,7 +6,7 @@ logger = Logger.new(STDOUT)
 
 DATABASE = ENV['MYSQL_DATABASE']
 
-namespace :database do
+namespace :db do
   desc 'Create database and run migration'
   task :run do
     client = Mysql2::Client.new(
