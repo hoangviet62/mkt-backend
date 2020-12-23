@@ -9,11 +9,12 @@ gem 'puma', '~> 5.0'
 gem 'bootsnap', '>= 1.4.4', require: false
 gem 'devise'
 gem 'rack-cors'
-gem 'rubocop', '~> 1.6', require: false
 
 group :development, :test do
   gem 'dotenv-rails'
   gem 'pry-rails'
+  gem 'brakeman'
+  gem 'rubocop', '~> 1.6', require: false
 end
 
 group :development do
