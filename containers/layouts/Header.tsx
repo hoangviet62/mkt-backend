@@ -26,14 +26,14 @@ const Header = () => {
       </div>
       <div className={layoutStyles["inner-header"]}>
         <Grid container spacing={0}>
-          <Grid item xs={3}>
+          <Grid item xs={3} textAlign="center">
             <div ref={logoObserve}>
               <Image
                 src="/inner-header-logo.jpeg"
                 alt="inner-header-logo"
-                layout="responsive"
-                width={logoWidth}
-                height={89}
+                layout="fixed"
+                width={logoWidth - 15}
+                height={75}
               />
             </div>
           </Grid>

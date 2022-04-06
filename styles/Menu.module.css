@@ -1,0 +1,59 @@
+.navbar {
+    background-color: rgba(var(--primaryColor));
+    color: white;
+    align-items: center;
+}
+
+.menu-category-title {
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    height: 42px;
+    padding-left: 25px;
+    padding-right: 25px;
+    background-color: rgba(var(--secondaryColor));
+}
+
+.menu-category-title:hover {
+    cursor: pointer;
+}
+
+.menu-category-content {
+    min-height: 305px;
+    background-color: #ffffff;
+}
+
+.margin-10 {
+    margin-right: 10px;
+}
+
+.menu-info {
+    align-items: center;
+    display: inline-flex;
+    width: 100%;
+    justify-content: space-evenly;
+    height: 42px;
+}
+
+.menu-info > a {
+    color: white;
+}
+
+.order-section {
+    text-align: right;
+}
+
+.order-tracking {
+    text-transform: uppercase;
+    color: white;
+    border: 2px solid white;
+    margin-right: 5px;
+}
+
+.order-tracking:hover {
+    border: 2px solid white;
+}
+
+.menu-item {
+    height: 62px;
+}
